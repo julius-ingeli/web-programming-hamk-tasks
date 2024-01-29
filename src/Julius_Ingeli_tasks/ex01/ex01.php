@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+        $title = "Exercise 01";
         echo"<h3>T3.1:Write PHP code to output the following message:</h3>";
         echo "<h3>Hello world! My name is \"David\"</h3>";
     ?>
