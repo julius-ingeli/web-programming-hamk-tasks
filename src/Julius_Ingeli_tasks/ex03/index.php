@@ -82,7 +82,7 @@
 <?php
     $str1 = "Hello";
     $str2 = "World";
-    echo $str1 ."\n".$str2 ."=";
+    echo "String 1:".$str1 ."\n String2:".$str2;
     $strresult = $str1 . $str2;
     echo "<p>Concatenated Result:<strong> $strresult</strong></p>";
     $n1 = 298; $n2 = 234; $n3 = 46;

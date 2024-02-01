@@ -30,13 +30,16 @@
           <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../ex01/ex01.php">Exercise 01</a>
+          <a class="nav-link" href="../ex01/index.php">Exercise 01</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php">Exercise 02</a>
+          <a class="nav-link" href="../ex02/index.php">Exercise 02</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../ex03/index.php">Exercise 03</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../ex04/index.php">Exercise 04</a>
         </li>
 
       </ul>
