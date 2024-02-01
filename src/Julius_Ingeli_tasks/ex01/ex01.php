@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php
+        $title = "Exercise 01";
+        include "../ex02/header.php";
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 1: Getting Started with PHP - Julius</title>
 </head>
 <body>
     <?php
-        $title = "Exercise 01";
+        
         echo"<h3>T3.1:Write PHP code to output the following message:</h3>";
         echo "<h3>Hello world! My name is \"David\"</h3>";
     ?>
@@ -49,6 +53,10 @@
     ?>
     <h3>T3.4 Take a screenshot that confirms your development environment setup and include it as an image in the "ex1.php" file.</h3>
     <img src="enviroment.png">
+
+    <?php
+        include "../ex02/footer.php";
+    ?>
 
 </body>
 </html>

@@ -41,12 +41,7 @@
                     echo "<h3>Please enter both first and last name.</h3>";
                 }
             }
-            //retrieving data for string form
-            
-                $string1 = $_POST["str1"];
-                $string2 = $_POST["str2"];
-                $strresult = $string1 . $string2;
-            
+
             
     ?>
     <h1>Table exercise</h1>
@@ -83,15 +78,17 @@
 
 
 <h1>String Exercise</h1>
-<form method="post" name="stringform" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
-    String 1:<input type="text" name="str1">
-    String 2:<input type="text" name="str2">
-    <button type="submit" value="concatenate">Concatenate</button>
-</form>
+    
 <?php
+    $str1 = "Hello";
+    $str2 = "World";
+    echo $str1 ."\n".$str2 ."=";
+    $strresult = $str1 . $str2;
     echo "<p>Concatenated Result:<strong> $strresult</strong></p>";
-    echo "<h1>Number addition Exercise</h1>\n296+234+46 = ";
-    echo 298+234+46;
+    $n1 = 298; $n2 = 234; $n3 = 46;
+    echo "<h1>Number addition Exercise</h1>\n".$n1."+".$n2."+".$n3. "= ";
+
+    echo $n1+$n2+$n3;
     echo "<h1>Browser Detection Exercise</h1>";
     
     $userAgent = $_SERVER['HTTP_USER_AGENT'];
