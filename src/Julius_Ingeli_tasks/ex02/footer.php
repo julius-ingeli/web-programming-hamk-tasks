@@ -3,6 +3,12 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright
+  <?php
+  $filePath = $_SERVER['SCRIPT_FILENAME'];
+  $fileName = basename($filePath);
+  $fileModTime = filemtime($filePath);
+  echo "<p>Last modified:".date("F d Y H:i:s.",$fileModTime)."<p>";
+?>
   </div>
   <!-- Copyright -->
 

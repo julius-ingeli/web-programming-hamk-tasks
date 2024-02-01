@@ -30,24 +30,24 @@
             //form check
             if($_SERVER["REQUEST_METHOD"]=="POST"){
                 //retrieving data for name form
-                if(isset($_POST['nameform'])){
-                    $firstName = $_POST["fn"];
-                    $lastName = $_POST["ln"];
-                    //check if both fields are filled
-                    if (!empty($firstName) && !empty($lastName)){
-                        echo "<h3>Hello, $firstName, $lastName, welcome to my site.</h3>";
-                    }
-                    else{
-                        echo "<h3>Please enter both first and last name.</h3>";
-                    }
+            
+                $firstName = $_POST["fn"];
+                $lastName = $_POST["ln"];
+                //check if both fields are filled
+                if (!empty($firstName) && !empty($lastName)){
+                    echo "<h3>Hello, $firstName, $lastName, welcome to my site.</h3>";
                 }
-                //retrieving data for string form
-                if(isset($_POST['stringform'])){
-                    $string1 = $_POST["str1"];
-                    $string2 = $_POST["str2"];
-                    $strresult = $string1 . $string2;
+                else{
+                    echo "<h3>Please enter both first and last name.</h3>";
                 }
             }
+            //retrieving data for string form
+            
+                $string1 = $_POST["str1"];
+                $string2 = $_POST["str2"];
+                $strresult = $string1 . $string2;
+            
+            
     ?>
     <h1>Table exercise</h1>
     <table class="table table-striped">
@@ -83,13 +83,20 @@
 
 
 <h1>String Exercise</h1>
-<form method="post" name="stringform">
+<form method="post" name="stringform" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
     String 1:<input type="text" name="str1">
     String 2:<input type="text" name="str2">
-    <button type="submit">Concatenate</button>
+    <button type="submit" value="concatenate">Concatenate</button>
 </form>
 <?php
     echo "<p>Concatenated Result:<strong> $strresult</strong></p>";
+    echo "<h1>Number addition Exercise</h1>\n296+234+46 = ";
+    echo 298+234+46;
+    echo "<h1>Browser Detection Exercise</h1>";
+    
+    $userAgent = $_SERVER['HTTP_USER_AGENT'];
+    echo $userAgent;
+
 ?>
 
 
