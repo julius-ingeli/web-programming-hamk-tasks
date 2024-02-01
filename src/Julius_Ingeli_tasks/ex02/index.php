@@ -27,4 +27,4 @@
     <div class="grid-item-2"></div>
     <div class="grid-item-3"></div>
 </div>
-<?php include "footer.php"; ?>
+

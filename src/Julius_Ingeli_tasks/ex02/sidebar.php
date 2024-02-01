@@ -9,6 +9,8 @@
 <ul>
     <li><a class="side" href="../ex01/ex01.php">Exercise 1</a></li>
     <li><a class="side" href="../ex02/index.php">Exercise 2</a></li>
+    <li><a class="side" href="../ex03/index.php">Exercise 3</a></li>
+    
 </ul>
 
 

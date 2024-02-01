@@ -36,7 +36,7 @@
           <a class="nav-link" href="index.php">Exercise 02</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../ex03/ex03.php">Exercise 03</a>
+          <a class="nav-link" href="../ex03/index.php">Exercise 03</a>
         </li>
 
       </ul>
