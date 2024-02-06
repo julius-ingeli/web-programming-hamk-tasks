@@ -1,3 +1,8 @@
+<?php
+$title = "Exercise 7.1 Register";
+include "../ex02/header.php";
+?>
+
 <h2>Input Your Information Below:</h2>
 <form name="form1" method="post" action="../crud/process.php">
     <div class="form-group">
@@ -26,10 +31,14 @@
             </div>
             <div class="col">
                 <label for="dob">Date of Birth </label>
-                <input type ="date" id="dob" name="dob" required>
+                <input type ="date" class="form-control" id="dob" name="dob" required>
             </div>
         </div>
     </div>
 
     <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>
+
+<?php
+include "../ex02/footer.php";
+?>

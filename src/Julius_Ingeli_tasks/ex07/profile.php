@@ -1,6 +1,6 @@
 <?php
 
-$title = "Exercise 7.1";  
+$title = "Exercise 7.1 Profile Edit";  
 include "../ex02/header.php";
 
 include '../crud/db.php';
