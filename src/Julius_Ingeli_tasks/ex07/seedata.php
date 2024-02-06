@@ -4,7 +4,9 @@ include "../ex02/header.php";
 include '../crud/db.php';
 // SQL query to retrieve data from the 'studentsinfo' table
 $sql = "SELECT * FROM profileInfo";
-
+echo "<style>
+        a{color:black};
+        </style>";
 // Execute the SQL query and store the result
 $result = $conn->query($sql);
 
@@ -17,7 +19,7 @@ if ($result->num_rows > 0) {
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
-                    <th>Password ID</th>
+                    <th>Password</th>
                     <th>Date of Birth</th>
                 </tr>
             </thead>
@@ -25,8 +27,9 @@ if ($result->num_rows > 0) {
 
     // Loop through the result set and display data in rows
     while ($row = $result->fetch_assoc()) {
+        $url= "profile.php?id=".$row['id'];
         echo "<tr>
-                <td>{$row['id']}</td>
+                <td><a href =$url>{$row['id']}</a></td>
                 <td>{$row['fname']}</td>
                 <td>{$row['lname']}</td>
                 <td>{$row['email']}</td>
